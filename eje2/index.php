@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        if($_SERVER['REQUEST_METHOD'] == "post"){
+            echo $_POST["nombre"];
+        }
+    ?>
     <form action="" action="post">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre">
